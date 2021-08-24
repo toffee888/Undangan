@@ -41,10 +41,9 @@
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
-                    gesture-handler>
-                    
-                <a-animation attribute="rotation" begin="rotate" to="0 360 0" dur="3000" repeat="indefinite" easing="linear"></a-animation>
-                entity.emit('rotate');
+                    gesture-handler
+                    animation="property: rotation">
+   
                 </a-entity>
             </a-marker>
 
