@@ -42,12 +42,9 @@
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler>
-                <a-animation attribute="rotation"
-                    dur="3000"
-                    to="360 360 0"
-                    repeat="indefinite"
-                    easing="linear">
-                </a-animation>
+                    
+                <a-animation attribute="rotation" begin="rotate" to="0 360 0" dur="3000" repeat="indefinite" easing="linear"></a-animation>
+                entity.emit('rotate');
                 </a-entity>
             </a-marker>
 
